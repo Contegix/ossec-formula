@@ -1,0 +1,11 @@
+{% set ossec = salt['grains.filter_by']({
+    'Debian': {
+        'service': 'ossec'
+    },
+    'RedHat': {
+        'service': 'ossec-hids'
+    },
+  }
+  , grain="os_family"
+  , merge=salt['pillar.get']('ossec:lookup'))
+%}
