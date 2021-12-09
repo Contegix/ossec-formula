@@ -8,6 +8,7 @@ ossec-install:
     - pkgs:
       - ossec-hids-agent
       - inotify-tools
+    - fromrepo: atomic
 
 ossec-conf:
   file.managed:
