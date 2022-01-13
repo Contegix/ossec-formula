@@ -1,4 +1,8 @@
 ossec:
-   # OSSEC server to connect to
+   # IP and hostname of the OSSEC Manager
    ip: 192.168.1.1
    hostname: ossec.example.com
+
+   # OPTIONAL: Omitting this will use the OSSEC default (1514/udp)
+   port: 1514
+
